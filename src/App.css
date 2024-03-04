@@ -1,0 +1,52 @@
+.bg-color {
+  background-color: #020230;
+}
+
+.box1 {
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #020230), url('./Assets/bg.jpg') no-repeat scroll center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box1 .top {
+  position: relative;
+}
+
+.box1 .top h2 {
+  width: 70px;
+  height: 70px;
+  border: 5px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+}
+
+.box1 .showHide {
+  float: right;
+  margin: 4px 4px 0 0;
+  display: none;
+}
+
+@media screen and (max-width:767px) {
+  .box1 .showHide {
+    display: block;
+  }
+
+  .box1 .top{
+    height: 30% !important;
+  }
+
+  .box1 .bottom{
+    height: 70% !important;
+  }
+}
+
+.box2 .active {
+  background-color: teal;
+}

@@ -1,0 +1,73 @@
+.question {
+    width: 85%;
+    font-size: 18px;
+    font-weight: 400;
+    background: linear-gradient(#100241, black);
+}
+
+.answere {  
+    width: 85%;
+}
+
+.answere .ans {
+    background: linear-gradient(#0e0124, #22074d);
+    text-align: center;
+    font-size: 18px;  
+    font-weight: 400;
+    border: 1px solid white;     
+    cursor: pointer;
+    padding: 10px;
+}
+
+.answere .ans:hover,
+.answere .active {
+    background: mediumblue;  
+}
+
+.answere .correct {
+    animation: correct 3s ease forwards;
+}
+
+@keyframes correct {
+
+    0%,
+    22%,
+    42% {
+        background: mediumblue;
+    }
+
+    20%,
+    40%,
+    60% {
+        background: linear-gradient(#0e0124, #22074d);
+    }
+
+    62%,
+    100% {
+        background: green;
+    }
+}
+
+.answere .wrong {
+    animation: wrong 3s ease forwards;
+}
+
+@keyframes wrong {
+
+    0%,
+    22%,
+    42% {
+        background: mediumblue;
+    }
+
+    20%,
+    40%,
+    60% {
+        background: linear-gradient(#0e0124, #22074d);
+    }
+
+    62%,
+    100% {
+        background: red;
+    }
+}
